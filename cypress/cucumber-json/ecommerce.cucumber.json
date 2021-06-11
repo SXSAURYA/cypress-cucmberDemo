@@ -1,0 +1,139 @@
+[
+  {
+    "description": "    application regression validation",
+    "keyword": "Feature",
+    "name": "End to End E-commerce Validation",
+    "line": 1,
+    "id": "end-to-end-e-commerce-validation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "end-to-end-e-commerce-validation;ecommerce-products-validation",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Ecommerce products Validation",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "When I open Ecommerce Page",
+            "result": {
+              "status": "passed",
+              "duration": 1196000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add Items to Cart",
+            "result": {
+              "status": "passed",
+              "duration": 2228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Validate the total Price",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "select the country submit and verify Thankyou",
+            "result": {
+              "status": "passed",
+              "duration": 6407000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-e-commerce-validation;filling-the-form-to-shop",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Filling the form to shop",
+        "tags": [
+          {
+            "name": "@smoken",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "When I open Ecommerce Page",
+            "result": {
+              "status": "passed",
+              "duration": 1231000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Pooja",
+                      "Female"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill the form details",
+            "result": {
+              "status": "failed",
+              "duration": 32000000,
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `name,gender`\n\nhttps://on.cypress.io/type\n    at Context.type (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:148053:17)\n    at Context.<anonymous> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:163288:21)\nFrom Your Spec Code:\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:65:27)\n    at Context.resolveAndRunStepDefinition (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:12503:9)\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:11844:35)\nFrom Your Spec Code:\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:65:27)\n    at Context.resolveAndRunStepDefinition (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:12503:9)\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:11844:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I validate the form Behaviour",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Select the shop Page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

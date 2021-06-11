@@ -1,0 +1,34 @@
+{
+    "name": "cypressautomation",
+    "version": "1.0.0",
+    "description": "This is just creating one new framework along with Cypress",
+    "main": "index.js",
+    "scripts": {
+        "test": ".\\node_modules\\.bin\\cypress run",
+        "headtest": "npm run test -- --headed",
+        "dashboardtest": "npm run test -- --record --key 906edc2e-a1cf-4453-94a6-02842d72a233",
+        "reportertest": "npm run test -- --record --key 906edc2e-a1cf-4453-94a6-02842d72a233 --reporter mochawesome",
+        "chrometest": "npm run test -- --browser chrome --record --key 906edc2e-a1cf-4453-94a6-02842d72a233",
+        "grouptest": "npm run test -- --spec \"cypress/integration/greenkart/*\""
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    },
+    "author": "Ullas",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "cypress": "^4.8.0",
+        "cypress-cucumber-preprocessor": "^4.0.0",
+        "cypress-iframe": "^1.0.1",
+        "mocha": "^5.2.0",
+        "mochawesome": "^6.2.1",
+        "multiple-cucumber-html-reporter": "^1.18.0"
+    }
+}

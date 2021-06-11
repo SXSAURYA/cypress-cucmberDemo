@@ -1,0 +1,16 @@
+{
+    "defaultCommandTimeout": 90000,
+    "pageLoadTimeout": 90000,
+    "baseUrl": "https://rahulshettyacademy.com/",
+    "env": {
+        "testUrl": "https://rahulshettyacademy.com/angularpractice/",
+        "stageUrl": ""
+    },
+    "projectId": "mmc9np",
+    "reporter": "mochawesome",
+    "retries": {
+        "openMode": 1,
+        "runMode": 1
+    },
+    "testFiles": "**/*.feature"
+}
